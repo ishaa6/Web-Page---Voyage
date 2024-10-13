@@ -1,0 +1,429 @@
+@media (max-width: 768px) 
+{
+
+    .hidden 
+    {
+        visibility: hidden; 
+        opacity: 0; 
+    }
+
+    .logo 
+    {
+        width: 20vw; 
+        height: auto; 
+        margin-top: 7vw;
+        padding-left: 2.60vw; 
+    }
+
+    .navbar 
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+    }
+
+    .dropdown 
+    {
+        position: relative;
+        display: inline-block;
+        margin-top: 10vh;
+        width: 100%;
+        margin-left: 0;
+        font-size: 2.6vh;
+    }
+    
+    .dropbtn 
+    {
+        font-size: 2vw;   
+    }
+
+    .arrow
+    {
+        width: 1vw;
+    }
+    
+    .dropdown-content a 
+    {
+        font-size: 2.6vw;
+    }
+
+    .dropdown-content a:hover 
+    {
+        background-color: #959492;
+        color: white;
+    }
+    
+
+    .menu 
+    {
+        position: absolute;
+        background: #ff8c00;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        z-index: 100;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; 
+    }
+
+    .menu ul 
+    {
+        padding: 0;
+        margin: 0;
+        list-style: none; 
+        display: flex;
+        flex-direction: column; 
+        width: 100%;
+    }
+
+    .menu ul li 
+    {
+        margin: 2px 0; 
+        width: 100%;
+    }
+
+    .menu ul li a 
+    {
+        text-decoration: none;
+        color: #fff;
+        display: block;
+        padding: 10px;
+        width: 100%; 
+        font-size: 2vh;
+        text-align: left; 
+    }
+
+    .menu ul li:hover 
+    {
+        background-color: rgba(255, 255, 255, 0.2); 
+    }
+
+.login-signup 
+{
+    margin-top: 35vh; 
+    text-align: left; 
+    display: flex;
+    align-items: center; 
+    margin-left: 5vh;
+}
+
+.login-signup .login 
+{
+    margin-right: 2vh; 
+}
+
+.login-signup .login h2 
+{
+    font-size: 2vh; 
+    color: #fff;
+    margin: 0; 
+}
+
+.login-signup .cn 
+{
+    font-size: 2vh; 
+    background-color: #fff;
+    color: #ff8c00;
+    border-radius: 2vh; 
+    padding: 1vh 3vh;
+    display: inline-block;
+    text-align: center; 
+    white-space: nowrap;
+}
+
+.login-signup .cn a 
+{
+    font-size: 2vh;
+    color: inherit;
+    text-decoration: none;
+    display: block; 
+    width: 100%;
+}
+
+.login:hover 
+{
+    background-color: rgba(255, 255, 255, 0.2); 
+}
+
+.menu
+{
+    display: none;
+}
+
+.fa-times
+{
+    display: none;
+    color: #fff;
+    margin: 0px;
+    margin-right: 160px;
+    font-size: 2.6vw;
+    cursor: pointer;
+}
+
+.fa-bars 
+{
+    display: block;
+    color: #fff;
+    font-size: 2.6vw;
+    cursor: pointer;
+    margin-right: 10vw;
+}
+
+.tour-labels .public-label, .tour-labels .private-label 
+{
+    font-size: 3vw; 
+    padding: 1vh 2vw; 
+}
+
+.dropdown-container 
+{
+    gap: 2vw; 
+}
+
+.form-group 
+{
+    min-width: 40vw; 
+    max-width: 45vw;
+}
+
+label 
+{
+    font-size: 2.5vw; 
+}
+
+.form-control 
+{
+    font-size: 2.5vw;
+}
+
+.company
+{
+        flex-direction: column;
+        align-items: center;
+}
+
+.company .text
+{
+        margin-top: 0vw;
+        width: 80%
+}
+
+.company .text t1
+{
+    font-size: 1.5vh;
+}
+
+.offer
+{
+    flex-direction: column;
+    align-items: center;
+}
+
+.offer .text
+{
+    margin: 10vh auto;
+    width: 80%;
+}
+
+.offer .text h5
+{
+    font-size: 3vh;
+}
+
+.offer .text t 
+{
+    font-size: 2vh;
+}
+
+.offer .contact
+{
+    width: 15vh;
+}
+
+.offer .imag
+{
+    margin-left: 40vh;
+}
+
+.services 
+{
+    flex-direction: column; 
+}
+
+.service-item 
+{
+    flex-direction: row; 
+    align-items: center; 
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.service-item img
+{
+    width: 20vh;
+    margin-bottom: 2vh;
+}
+
+.services .text 
+{
+    text-align: left; 
+    margin-left: 1.5vh; 
+    width: 30vh;
+}
+
+.services .text t 
+{
+    font-size: 3vw;
+    margin: 0;
+}
+
+.services .text p 
+{
+    font-size: 2vw;
+    margin: 0;
+}
+
+.form-box 
+{
+    width: 80%; 
+    margin-left: 5vw; 
+    height: auto;
+}
+
+.imag 
+{
+    margin-left: 50%;
+    width: 50%; 
+    margin-top: 2vh; 
+}
+
+.box 
+{
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.row 
+{
+    flex-direction: column;
+    width: 100%; 
+}
+
+.input-box 
+{
+    width: 90%; 
+    margin-bottom: 1vh; 
+}
+
+.bike button 
+{
+    font-size: 2vw;
+    margin-left: 25%;
+    margin-top: 2vh; 
+    width: 50%; 
+}
+
+.bike .title 
+{
+    font-size: 3vh; 
+    margin-left: 25%;
+}
+
+l.bike abel 
+{
+    margin-left: 10%;
+}
+
+input, select 
+{
+    margin-left: 10%;
+    font-size: 2vw;
+}
+
+.about .text 
+{
+    width: 80%; 
+}
+
+.about .text h1
+{
+    margin-bottom: 3vh;
+    font-size: 6vw;
+}
+
+.about .text p 
+{
+    font-size: 2.5vw;
+    margin-bottom: 5vh;
+}
+
+.view h2
+{
+    font-size: 2.5vw;
+}
+
+}
+
+
+@media (max-width: 992px)
+{
+    .dest-item 
+    {
+        display: none; 
+    }
+
+    .dest-item:nth-child(-n+3) 
+    {
+        display: block; 
+    }
+
+    .left-btn 
+    {
+        display: none; 
+    }
+
+    .right-btn 
+    {
+        display: inline-block; 
+    }   
+
+    .top h2
+    {
+        font-size: 3vw;
+    }
+
+    .dest1 p, .dest2 p, .dest3 p, .dest4 p 
+    {
+        font-size: 2vw;
+    }
+    
+    .dest1 h3, .dest2 h3, .dest3 h3, .dest4 h3 
+    {
+        font-size: 2.7vw;
+    }
+
+    .dets
+    {
+    font-size: 1.5vw;
+    }
+
+    .price 
+    {
+        font-size: 2.7vw;
+    }
+
+    .company
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text
+    {
+        margin-top: 0vw;
+        width: 80%
+    }
+}

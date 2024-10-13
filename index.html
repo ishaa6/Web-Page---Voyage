@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoyageAid</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">    
+</head>
+
+<body>
+<section class="home">
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <img src="images/logo.svg" class="logo">
+            </div>
+            <div class="menu">
+                <i class="fa fa-times"></i>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Tour Packages</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                <div class="dropdown">
+                    <button class="dropbtn">Eng<span class="arrow"></span></button>
+                    <div class="dropdown-content">
+                        <a href="#">Eng</a>
+                        <a href="#">Hindi</a>
+                        <a href="#">Tamil</a>
+                        <a href="#">Telugu</a>
+                        <a href="#">Malayalam</a>
+                    </div>
+                </div>
+                <div class="login-signup">
+                    <div class="login">
+                        <h2>Login</h2>
+                    </div>
+                    <button class="cn">
+                        <a href="#">Sign Up</a>
+                    </button>
+                </div>
+            </div>
+            <i class="fa fa-bars"></i>
+        </div>
+
+        <div class="content">
+            <h1>Enjoy in the best way!</h1>
+            <p class="subtext">Enjoy our services for your trip anytime</p>
+        </div>
+        
+        <div class="tour-container">
+            <div class="tour-labels">
+                <div class="public-label active" onclick="openTab(event, 'public')">
+                    <i class="fas fa-globe"></i> Public Tours
+                </div>
+                <div class="private-label" onclick="openTab(event, 'private')">
+                    <i class="fas fa-users"></i> Private Tours
+                </div>
+            </div>
+        
+            <div class="tour-box">
+                <div id="public" class="tabcontent active">
+                    <div class="dropdown-container">
+                        <div class="form-group">
+                            <label for="number-of-people">
+                                <i class="fas fa-users"></i> Number of People
+                            </label>
+                            <select class="form-control" id="people">
+                                <option value="" disabled selected>Choose Number</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5+</option>
+                            </select>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="date">
+                                <i class="fas fa-calendar-alt"></i> Date
+                            </label>
+                            <input type="text" id="date" class="form-control" placeholder="Choose Date" onfocus="(this.type='date')" onblur="if(!this.value) this.type='text'">
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="time">
+                                <i class="fas fa-clock"></i> Time
+                            </label>
+                            <input type="text" id="time" class="form-control" placeholder="Choose Time" onfocus="(this.type='time')" onblur="if(!this.value) this.type='text'">
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="tour">
+                                <i class="fas fa-flag"></i> Tour
+                            </label>
+                            <select class="form-control" id="tour">
+                                <option value="" disabled selected>Select Tour</option>
+                                <option>City Tour</option>
+                                <option>Cultural Experience</option>
+                                <option>Adventure Tour</option>
+                            </select>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="transportation">
+                                <i class="fas fa-car"></i> Transportation
+                            </label>
+                            <select class="form-control" id="transportation">
+                                <option value="" disabled selected>Select Transportation</option>
+                                <option>Bus</option>
+                                <option>Van</option>
+                                <option>Tram</option>
+                                <option>Train</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+        
+                <div id="private" class="tabcontent">
+                    <div class="dropdown-container">
+                        <div class="form-group">
+                            <label for="number-of-people">
+                                <i class="fas fa-users"></i> Number of People
+                            </label>
+                            <select class="form-control" id="people">
+                                <option value="" disabled selected>Choose Number</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5+</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">
+                                <i class="fas fa-calendar-alt"></i> Date
+                            </label>
+                            <input type="text" id="date" class="form-control" placeholder="Choose Date" onfocus="(this.type='date')" onblur="if(!this.value) this.type='text'">
+                        </div>
+                        <div class="form-group">
+                            <label for="time">
+                                <i class="fas fa-clock"></i> Time
+                            </label>
+                            <input type="text" id="time" class="form-control" placeholder="Choose Time" onfocus="(this.type='time')" onblur="if(!this.value) this.type='text'">
+                        </div>
+                        <div class="form-group">
+                            <label for="tour">
+                                <i class="fas fa-flag"></i> Tour
+                            </label>
+                            <select class="form-control" id="tour">
+                                <option value="" disabled selected>Select Tour</option>
+                                <option>City Tour</option>
+                                <option>Cultural Experience</option>
+                                <option>Adventure Tour</option>
+                                <option>Speciality Tour</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="transportation">
+                                <i class="fas fa-car"></i> Transportation
+                            </label>
+                            <select class="form-control" id="transportation">
+                                <option value="" disabled selected>Select Transportation</option>
+                                <option>Car</option>
+                                <option>Bike</option>
+                                <option>Bus</option>
+                                <option>Van</option>
+                                <option>Tram</option>
+                                <option>Train</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+           
+    </div>
+</section>
+
+<!---EXPLORE--->
+<section class="explore">
+
+    <div class="top">
+        <h2>Explore Our Popular Destinations</h2>
+        <div class="nav-buttons">
+            <button class="left-btn"><i class="fa fa-arrow-left"></i></button>
+            <button class="right-btn"><i class="fa fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <div class="dest">
+        <div class="dest1">
+            <img src="images/popular_dest_1.svg">
+            <h3>Lucca Bike Tour</h3>
+            <p>from <span class="price">34€</span></p>
+            <div class="dets">
+                <span class="left"><i class="fa fa-calendar" style="color: orange;"></i>EVERYDAY</span>
+                <span class="right"><i class="fa fa-users" style="color: orange;"></i>3-10 PP</span>
+            </div>
+            <p>A tour of the city and its surroundings led by a professional guide...</p>
+        </div>
+        <div class="dest2">
+            <img src="images/popular_dest_2.svg">
+            <h3>Wine tasting in Tuscany</h3>
+            <p>from <span class="price">34€</span></p>
+            <div class="dets">
+                <span class="left"><i class="fa fa-calendar" style="color: orange;"></i>MONDAY</span>
+                <span class="right"><i class="fa fa-users" style="color: orange;"></i>10-30 PP</span>
+            </div>
+            <p>The real magic is here where you can enjoy the best Tuscan wine and eat...</p>
+        </div>
+        <div class="dest3">
+            <img src="images/popular_dest_3.svg">
+            <h3>Cinque Terre Tour</h3>
+            <p>from <span class="price">34€</span></p>
+            <div class="dets">
+                <span class="left"><i class="fa fa-calendar" style="color: orange;"></i>TO BE DECIDED</span>
+                <span class="right"><i class="fa fa-users" style="color: orange;"></i>10-30 PP</span>
+            </div>
+            <p>Visiting the 5 Terre is a must, and you can never go there enough...</p>
+        </div>
+        <div class="dest4" style="display: none;">
+            <img src="images/popular_dest_4.svg">
+            <h3>Siena and surroundings</h3>
+            <p>from <span class="price">34€</span></p>
+            <div class="dets">
+                <span class="left"><i class="fa fa-calendar" style="color: orange;"></i>TO BE DECIDED</span>
+                <span class="right"><i class="fa fa-users" style="color: orange;"></i>5-10 PP</span>
+            </div>
+            <p>Visit the beautiful Siena and the cities that surround it to experience...</p>
+        </div>
+    </div>
+
+    <div class="company">
+        <div class="imag">
+            <img src="images/best_company01.svg" class="image">
+        </div>
+        <div class="text">
+            <t1>WELCOME TO OUR SITE</t1>
+            <h4>We are the best company for you to visit</h4>
+            <t>After decades of experience, and a whole life in Lucca, we offer you the most 
+                complete tourism service in the city. In addition to having bikes and rickshaws to
+                have as much as fun as you want, you have the choice of tour guides with whom to
+                tours and drivers for your every need! We offer packages in the way that you get the 
+                most at the lowest price. Book with us and we will always be available for you!</t>
+                <div class="subtext">
+                    <div class="t1">
+                        <t>20+</t>
+                        <t1>Years</t1>
+                        <t1>Experience</t1>
+                    </div>
+                    <div class="t2">
+                        <t>100+</t>
+                        <t1>Happy</t1>
+                        <t1>Customers</t1>
+                    </div>
+                    <div class="t3">
+                        <t>15+</t>
+                        <t1>Choices</t1>
+                        <t1>of Services</t1>
+                    </div>
+                    <div class="t4">
+                        <t>10+</t>
+                        <t1>Professional</t1>
+                        <t1>Guides</t1>
+                    </div>
+                </div>
+        </div>
+    </div>
+</section>
+
+
+<!---SPECIAL OFFER--->
+
+<section>
+    <div class="offer">
+        <div class="text">
+            <h5>Get Special Offers for</h5>
+            <h5>Organizations</h5>
+            <t>Lorem Ipsum is simply dummy text of the printing and 
+                typesetting industry. Lorem Ipsum has been the 
+                industry's standart text ever since the 1500s.
+            </t>
+            <button class="contact">
+                <t>Contact Us</t>
+            </button>
+        </div>
+        <div class="imag">
+            <img src="images/special_offers01.svg">
+        </div>
+    </div>
+</section>
+
+
+<!---SERVICES--->
+
+<section>
+    <div class="services">
+        <div class="service-item s1">
+            <img src="images/services01.svg">
+            <div class="text">
+                <t>Bike and rickshaw rental</t>
+                <p>Book your quality vehicle for an hour or all day</p>
+            </div>
+        </div>
+        <div class="service-item s2">
+            <img src="images/services02.svg">
+            <div class="text">
+                <t>Guided tour of the countryside</t>
+                <p>Live the real Lucchese experience by visiting the suburbs by bike!</p>
+            </div>
+        </div>
+        <div class="service-item s3">
+            <img src="images/services03.svg">
+            <div class="text">
+                <t>Taxi and NCC service</t>
+                <p>Do you need not only a bike but also a driver? Then you have found the right place!</p>
+            </div>
+        </div>
+        <div class="service-item s4">
+            <img src="images/services04.svg">
+            <div class="text">
+                <t>Bus Package</t>
+                <p>Do you need not only a bike but also a driver? Then you have found the right place!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!---BOOK BIKE-->
+
+<section>
+    <div class="bike">
+        <span class="title">Book Bike Now</span>
+        <div class="box">
+        <div class="form-box">
+            <form>
+                <div class="row">
+                    <div class="input-box">
+                    <label for="name">Name and Surname</label>
+                    <input type="text" id="name" placeholder="Enter your name">
+                    </div>
+
+                    <div class="input-box">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-box">
+                    <label for="phone">Telephone Number</label>
+                    <input type="tel" id="phone" placeholder="Enter your phone number">
+                    </div>
+
+                    <div class="input-box">
+                    <label for="service">Service Type</label>
+                    <select id="service">
+                        <option value="bike_rental">Bike Rental</option>
+                        <option value="rickshaw_rental">Rickshaw Rental</option>
+                        <option value="guided_tour">Guided Tour</option>
+                        <option value="taxi_service">Taxi Service</option>
+                    </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-box">
+                    <label for="date">Date</label>
+                    <input type="date" id="date">
+                    </div>
+
+                    <div class="input-box">
+                    <label for="time">Time</label>
+                    <input type="time" id="time">
+                    </div>
+                </div>
+
+                <button type="submit">Book Now</button>
+            </form>
+        </div>
+        <div class="imag">
+            <img src="images/bike picture.png">
+        </div>
+    </div>
+    </div>
+</section>
+
+    <script src="script.js">defer</script>
+</body>
+</html>
